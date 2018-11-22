@@ -13,14 +13,12 @@ public class Game {
         System.out.println(player.getTorpedo_boat());
 
 
-//        Field my_field = new Field();
-//        Field my_enemy_field = new Field();
-        for (byte i = 0; i < 10; i++) {
-            for (byte j = 0; j < 10; j++) {
+        for (byte i = 0; i < 11; i++) {
+            for (byte j = 0; j < 11; j++) {
                 player.getMy_field().get_field(i,j);
             }
             System.out.print("      ");
-            for (byte m = 0; m < 10; m++){
+            for (byte m = 0; m < 11; m++){
                 player.getEnemy_field().get_field(i,m);
             }
             System.out.println();
