@@ -1,6 +1,7 @@
 package main.java.bnc;
 
 public class Field {
+
     private char field[][];
 
     public Field() {
@@ -22,4 +23,13 @@ public class Field {
     public void get_field(byte i, byte j){
         System.out.print((field[i][j]) + " ");
     }
+
+    public int get_length_field(){
+        return field.length;
+    }
+
+    public void set_mark(byte x, byte y, char mark){
+        this.field[x][y] = mark;
+    }
+
 }
