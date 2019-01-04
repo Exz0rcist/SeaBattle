@@ -1,10 +1,13 @@
 package main.java.bnc;
 
+import java.util.ArrayList;
+
 public class Player {
     public char MISSMARK = '-';
     public char HITMARK = 'X';
-    public char FOGOFAWRMARK = '0';
+    public char FOGOFWARMARK = '0';
 
+    public ArrayList<Ship> ships = new ArrayList<Ship>();
     private byte battleship_counter = 1;
     private byte cruiser_counter = 2;
     private byte destroyer_counter = 3;
@@ -27,7 +30,7 @@ public class Player {
     }
 
     private Field my_field = new Field();
-    private Field enemy_field = new Field();
+    private Field enemy_field = new Field(FOGOFWARMARK);
 
 
 

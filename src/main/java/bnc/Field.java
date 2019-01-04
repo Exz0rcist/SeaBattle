@@ -7,16 +7,32 @@ public class Field {
     public Field() {
         this.field = new char[][]{
                 {'-', 'a', 'b', 'c', 'd', 'e', 'f', 'j', 'h', 'i', 'k'},
-                {'0','0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
-                {'1','0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
-                {'2','0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
-                {'3','0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
-                {'4','0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
-                {'5','0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
-                {'6','0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
-                {'7','0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
-                {'8','0', '0', '0', '0', '0', '0', '0', '0', '0', '0'},
-                {'9','0', '0', '0', '0', '0', '0', '0', '0', '0', '0'}
+                {'0',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {'1',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {'2',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {'3',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {'4',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {'5',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {'6',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {'7',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {'8',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                {'9',' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}
+        };
+    }
+
+    public Field(char mark){
+        this.field = new char[] []{
+                {'-', 'a', 'b', 'c', 'd', 'e', 'f', 'j', 'h', 'i', 'k'},
+                {'0',mark, mark, mark, mark, mark, mark, mark, mark, mark, mark},
+                {'1',mark, mark, mark, mark, mark, mark, mark, mark, mark, mark},
+                {'2',mark, mark, mark, mark, mark, mark, mark, mark, mark, mark},
+                {'3',mark, mark, mark, mark, mark, mark, mark, mark, mark, mark},
+                {'4',mark, mark, mark, mark, mark, mark, mark, mark, mark, mark},
+                {'5',mark, mark, mark, mark, mark, mark, mark, mark, mark, mark},
+                {'6',mark, mark, mark, mark, mark, mark, mark, mark, mark, mark},
+                {'7',mark, mark, mark, mark, mark, mark, mark, mark, mark, mark},
+                {'8',mark, mark, mark, mark, mark, mark, mark, mark, mark, mark},
+                {'9',mark, mark, mark, mark, mark, mark, mark, mark, mark, mark}
         };
     }
 
