@@ -5,29 +5,31 @@ public class Player {
     public char HITMARK = 'X';
     public char FOGOFAWRMARK = '0';
 
-    private byte battleship = 1;
-    private byte cruiser = 2;
-    private byte destroyer = 3;
-    private byte torpedo_boat = 4;
+    private byte battleship_counter = 1;
+    private byte cruiser_counter = 2;
+    private byte destroyer_counter = 3;
+    private byte torpedoBoat_counter = 4;
+
+    public byte getBattleship_counter() {
+        return battleship_counter;
+    }
+
+    public byte getCruiser_counter() {
+        return cruiser_counter;
+    }
+
+    public byte getDestroyer_counter() {
+        return destroyer_counter;
+    }
+
+    public byte getTorpedoBoat_counter() {
+        return torpedoBoat_counter;
+    }
 
     private Field my_field = new Field();
     private Field enemy_field = new Field();
 
-    public byte getBattleship() {
-        return battleship;
-    }
 
-    public byte getCruiser() {
-        return cruiser;
-    }
-
-    public byte getDestroyer() {
-        return destroyer;
-    }
-
-    public byte getTorpedo_boat() {
-        return torpedo_boat;
-    }
 
     public Field getMy_field() {
         return my_field;
